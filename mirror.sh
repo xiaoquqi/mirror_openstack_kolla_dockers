@@ -21,5 +21,9 @@ if [[ ! -e $CONF_FILE ]]; then
 fi
 
 for image in $(cat $CONF_FILE); do
-  echo "docker pull $image:$BRANCH_NAME"
+  source_docker_repo="$image:$BRANCH_NAME"
+  target_docker_repo="$TARGET_REPO/$(basename $image):$BRANCH_NAME"
+  docker pull $source_docker_repo
+  docker tag $source_docker_repo $target_docker_repo
+  docker push $target_docker_repo
 done
