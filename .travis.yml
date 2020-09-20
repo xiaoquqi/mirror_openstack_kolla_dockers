@@ -1,0 +1,7 @@
+language: bash
+
+services:
+    - docker
+
+script:
+    - ./mirror.sh ussuri registry.cn-beijing.aliyuncs.com/openstack-dockers
