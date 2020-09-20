@@ -20,7 +20,7 @@ if [[ ! -e $CONF_FILE ]]; then
   exit 1
 fi
 
-docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD registry.cn-beijing.aliyuncs.com
 
 for image in $(cat $CONF_FILE); do
   source_docker_repo="$image:$BRANCH_NAME"
