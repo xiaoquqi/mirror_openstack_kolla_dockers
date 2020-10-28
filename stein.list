@@ -56,6 +56,7 @@ kolla/centos-source-nova-libvirt
 kolla/centos-source-nova-novncproxy
 kolla/centos-source-nova-scheduler
 kolla/centos-source-nova-ssh
+kolla/centos-source-nova-consoleauth
 kolla/centos-source-openvswitch-db-server
 kolla/centos-source-openvswitch-vswitchd
 kolla/centos-source-placement-api
