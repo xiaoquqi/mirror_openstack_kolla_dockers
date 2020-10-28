@@ -4,4 +4,4 @@ services:
     - docker
 
 script:
-    - ./mirror.sh stein registry.cn-beijing.aliyuncs.com/openstack-dockers
+    - ./mirror.sh train registry.cn-beijing.aliyuncs.com/openstack-dockers
